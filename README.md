@@ -19,6 +19,7 @@ My test has been done with followings:
 
   1. First, install dependencies.  
 
+
     carton install --cached
 
   2. Second, edit config.pl and specify which database to store test results to.  
@@ -26,6 +27,7 @@ My test has been done with followings:
    I set it to SQLite database called deployment.db for this example.  
 
   2. Then, 
+
 
     sh start_ukigumo.sh
 
@@ -55,13 +57,20 @@ I set up Perl Dancer application for this test.
 
   Follwoing steps should resolved the issue.  
 
-    cd application_root_dir
-    rm .git/hooks/pre-commit
-    carton install 
-    caront bundle 
-    git add .
-    git commit -m 'update dependencies'
-    cd .git/hooks
-    ln -s ../../pre-commit pre-commit 
 
+    cd application_root_dir  
+    rm .git/hooks/pre-commit  
+    carton install  
+    caront bundle  
+    git add .  
+    git commit -m 'update dependencies'  
+    cd .git/hooks  
+    ln -s ../../pre-commit pre-commit  
+
+
+## Sample output  
+
+You will see a nice summary page with test result once Ukigumo server runs your tests.  
+
+<img src="/img/ukigumo-server01.png" width="100%">  
 
