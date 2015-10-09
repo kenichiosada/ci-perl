@@ -1,5 +1,4 @@
 *.swp
 local
-vendor
 tmp
 deployment.db
