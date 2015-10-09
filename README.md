@@ -19,19 +19,19 @@ My test has been done with followings:
 
   1. First, install dependencies.  
 
-```
-carton install --cached
-```
+   ```
+   carton install --cached
+   ```
 
   2. Second, edit config.pl and specify which database to store test results to.  
 
    I set it to SQLite database called deployment.db for this example.  
 
-  2. Then, 
+  3. Then, 
 
-```
-sh start_ukigumo.sh
-```
+   ```
+   sh start_ukigumo.sh
+   ```
 
    This will start Ukigumo server at http://localhost:2828 and we're ready to run some tests.  
 
